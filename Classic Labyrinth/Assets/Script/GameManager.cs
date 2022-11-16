@@ -8,8 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject gameOverPanel;
     [SerializeField] GameObject shootCount;
     [SerializeField] TMP_Text totalCount;
-    [SerializeField]
-    PlayerController player;
+    [SerializeField] PlayerController player;
     [SerializeField] Hole hole;
 
     private void Start()
@@ -22,6 +21,7 @@ public class GameManager : MonoBehaviour
     {
         if (hole.Entered && gameOverPanel.activeInHierarchy == false)
         {
+            Debug.Log("BallIn");
             shootCount.SetActive(false);
             gameOverPanel.SetActive(true);
             totalCount.text = "Total Shots: " + player.ShootCount;

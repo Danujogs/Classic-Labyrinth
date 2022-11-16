@@ -91,7 +91,7 @@ Material:
     - _DstBlend: 0
     - _EmissionScaleUI: 0
     - _Gloss: 0.5
-    - _Glossiness: 0.48
+    - _Glossiness: 0.204
     - _Lightmapping: 1
     - _Metallic: 0
     - _Mode: 0
@@ -104,7 +104,7 @@ Material:
     - _Wavelength: 0.17857142
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0.6226415, b: 0.23511119, a: 1}
+    - _Color: {r: 0.053266272, g: 0.5943396, b: 0.49296525, a: 1}
     - _Color1: {r: 0.67910445, g: 0.67910445, b: 0.67910445, a: 1}
     - _Color2: {r: 0.14179105, g: 0.14179105, b: 0.14179105, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}

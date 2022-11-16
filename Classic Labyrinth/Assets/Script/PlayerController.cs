@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && isShooting)
         {
-            ball.AddForce(forceDir * shootForce * forceFactor);
+            // ball.AddForce(forceDir * shootForce * forceFactor);
             shootCount += 1;
             shootCountText.text = "Shoot Count: " + shootCount;
             forceFactor = 0;

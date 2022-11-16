@@ -20,21 +20,22 @@ public class Ball : MonoBehaviour
         lastPosition = this.transform.position;
     }
 
-    internal void AddForce(Vector3 force)
-    {
-        rb.isKinematic = false;
-        lastPosition = this.transform.position;
-        rb.AddForce(force, ForceMode.Impulse);
-    }
+    // internal void AddForce(Vector3 force)
+    // {
+    // //     rb.isKinematic = false;
+    // //     lastPosition = this.transform.position;
+    // //     rb.AddForce(force, ForceMode.Impulse);
+    // //
+    // }
 
-    private void FixedUpdate()
-    {
-        if (rb.velocity != Vector3.zero && rb.velocity.magnitude < 0.5f)
-        {
-            rb.velocity = Vector3.zero;
-            rb.isKinematic = true;
-        }
-    }
+    // private void FixedUpdate()
+    // {
+    //     // if (rb.velocity != Vector3.zero && rb.velocity.magnitude < 0.5f)
+    //     // {
+    //     //     rb.velocity = Vector3.zero;
+    //     //     rb.isKinematic = true;
+    //     // }
+    // }
 
     private void OnCollisionEnter(Collision other)
     {
@@ -49,7 +50,7 @@ public class Ball : MonoBehaviour
     {
         isTeleporting = true;
         yield return new WaitForSeconds(3);
-        rb.isKinematic = true;
+        rb.isKinematic = false;
         this.transform.position = lastPosition;
         isTeleporting = false;
     }
